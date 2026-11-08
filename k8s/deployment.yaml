@@ -18,13 +18,13 @@ spec:
       containers:
         - name: devopsify-app
           # CI updates this line automatically on every push to main
-          image: ghcr.io/kaifk8521-dotcom/devopsify-app:latest
+          image: ghcr.io/kaifk8521-dotcom/devopsify-app:429a299
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
           env:
             - name: APP_VERSION
-              value: "latest"
+              value: "429a299"
           readinessProbe:
             httpGet:
               path: /health
