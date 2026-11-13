@@ -4,7 +4,7 @@ const os = require('os');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send(`<h1>DevOpsified App 🚀</h1>
+  res.send(`<h1>DevOpsified App by Kaif Khan 🚀</h1>
 <p>Version: ${process.env.APP_VERSION || 'dev'}</p>
 <p>Served by pod: ${os.hostname()}</p>`);
 });
